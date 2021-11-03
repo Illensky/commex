@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background: url("/assets/img/star.png");
+    color: white;
+    height: 100px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    background-color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+.wrapper {
+    display: inline-block;
+    margin: 15px 20vw;
+    width: 1000px;
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-right: 1px solid #555555;
+    font-size: 2em;
+}
+
+.no_border {
+    border: none;
+}
+
+header li a {
+    display: block;
+    padding: 20px;
+}
+
+header li:hover a {
+    background-color: #15418c;
+    color: white;
+}
+
+header li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    background-color: #15418c;
+    width: 300px;
+    z-index: 99;
+}
+
+.sub_menu li {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.sub_menu li:hover a {
+    background-color: #072f54;
+}
